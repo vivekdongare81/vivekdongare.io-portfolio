@@ -42,7 +42,7 @@ function Experience() {
     {
       company: "ShopBonanza Pvt. Ltd.",
       companyUrl: "https://www.linkedin.com/company/shopbonanza/",
-      logo:  "/static/logos/shopbonanza.svg",
+      logo: "/static/logos/shopbonanza_logo.svg",
       location: "Remote / Dehradun, Uttarakhand, India",
       roles: [
         {
@@ -66,7 +66,9 @@ function Experience() {
       <SectionTitle title="My professional journey so far." />
 
       <div className="mt-16">
-        <div className="relative max-w-5xl mx-auto flex"> {/* <<<< Adjust */}
+        <div className="relative max-w-5xl mx-auto flex">
+          {" "}
+          {/* <<<< Adjust */}
           {/* Main vertical rod for all experience */}
           {/* <div className="relative" style={{ width: '40px' }}>
             <div className="absolute left-1/2 top-0 bottom-0 w-2 bg-gradient-to-b from-fun-pink-light via-fun-pink to-fun-pink-dark rounded-full shadow-lg opacity-80 -translate-x-1/2" style={{ zIndex: 0 }} />
@@ -75,11 +77,25 @@ function Experience() {
             {experienceData.map((exp, idx) => (
               <div key={idx} className="mb-16 flex ">
                 {/* Company-specific mini-timeline */}
-                <div className="relative flex  flex-col items-center mr-8" style={{ width: '56px' }}>
+                <div
+                  className="relative flex flex-col items-center mr-8 -mt-4"
+                  style={{ width: "56px" }}
+                >
+                  {" "}
+                  {/* Added -mt-4 to lift logo and bar */}
                   {/* Render SVG image as company logo, no box or border */}
                   <div className="relative z-10 mb-2">
                     {/* If exp.logo is an SVG path, render as <img src={exp.logo} ... /> */}
-                    <img src={exp.logo} alt={exp.company} className="w-14 h-14" style={{ background: 'none', border: 'none', boxShadow: 'none' }} />
+                    <img
+                      src={exp.logo}
+                      alt={exp.company}
+                      className="w-14 h-14"
+                      style={{
+                        background: "none",
+                        border: "none",
+                        boxShadow: "none",
+                      }}
+                    />
                   </div>
                   {/* Company-specific vertical bar with fading gradient, connected to bottom of image */}
                   <div className="absolute left-1/2 top-14 w-1 h-full bg-gradient-to-b from-fun-pink-light/80 via-fun-pink/60 to-transparent rounded-full -translate-x-1/2" />
@@ -96,36 +112,90 @@ function Experience() {
                         className="inline-flex items-center gap-1 hover:underline hover:text-fun-pink-dark transition-colors group"
                       >
                         {exp.company}
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="w-4 h-4 ml-1 text-fun-pink opacity-80 group-hover:text-fun-pink-dark transition"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                          style={{ display: "inline" }}
-                        >
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M14 3h7m0 0v7m0-7L10 14m-7 7h7a2 2 0 002-2v-7" />
-                        </svg>
+                        <img
+                          src="/static/icons/external-link.svg"
+                          width={16}
+                          height={16}
+                          alt="Link Icon"
+                          className="ml-1 inline opacity-80 group-hover:opacity-100 transition"
+                        />
                       </a>
                     </h3>
-                    <div className="text-xs text-fun-gray font-monospace">{exp.location}</div>
+                    <div className="text-xs text-fun-gray font-monospace">
+                      {exp.location}
+                    </div>
                   </div>
                   <div className="relative ml-2 md:ml-8 mt-2">
                     <div className="space-y-8">
                       {exp.roles.map((role, rIdx) => (
                         <div key={rIdx} className="flex items-start relative">
-                          <div style={{ width: '24px' }} />
+                          <div style={{ width: "24px" }} />
                           <div className="flex-1">
                             <div className="font-semibold text-white text-base flex items-center gap-2">
                               {role.jobTitle}
                             </div>
-                            <div className="text-xs text-fun-gray mb-2 mt-1 font-monospace">{role.duration}</div>
+                            <div className="text-xs text-fun-gray mb-2 mt-1 font-monospace">
+                              {role.duration}
+                            </div>
                             <ul className="list-disc pl-5 text-fun-gray-light text-sm mt-2 space-y-1">
                               {role.responsibilities.map((item, i) => (
                                 <li key={i}>{item}</li>
                               ))}
                             </ul>
+                            {/* Project links for Software Developer role */}
+                            {role.jobTitle === "Software Developer" && (
+                              <div className="mt-2 flex flex-col gap-2">
+                                {/* Project Alpha */}
+                                <div className="flex items-center gap-2 ml-3">
+                                  <span className="text-blue-200 font-medium text-sm">Text Watermarking</span>
+                                  <a
+                                    href="https://project-alpha-live.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-1"
+                                  >
+                                    <img
+                                      src="/static/icons/external-link.svg"
+                                      alt="Live Site"
+                                      className="w-4 h-4"
+                                    />
+                                  </a>
+                                </div>
+                                {/* Project Alpha */}
+                                <div className="flex items-center gap-2 ml-3">
+                                  <span className="text-blue-200 font-medium text-sm">ZPII</span>
+                                  <a
+                                    href="https://project-alpha-live.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-1"
+                                  >
+                                    <img
+                                      src="/static/icons/external-link.svg"
+                                      alt="Live Site"
+                                      className="w-4 h-4"
+                                    />
+                                  </a>
+                                </div>
+                                <div className="flex items-center gap-2 ml-2">
+                                  <span className="bg-fun-pink-dark text-white text-xs rounded px-2 py-0.5">
+                                    Java
+                                  </span>
+                                  <span className="bg-fun-pink-dark text-white text-xs rounded px-2 py-0.5">
+                                    Spring Boot
+                                  </span>
+                                  <span className="bg-fun-pink-dark text-white text-xs rounded px-2 py-0.5">
+                                    PostgreSQL
+                                  </span>
+                                  <span className="bg-fun-pink-dark text-white text-xs rounded px-2 py-0.5">
+                                    Kafka
+                                  </span>
+                                  <span className="bg-fun-pink-dark text-white text-xs rounded px-2 py-0.5">
+                                    Docker
+                                  </span>
+                                </div>
+                              </div>
+                            )}
                           </div>
                         </div>
                       ))}

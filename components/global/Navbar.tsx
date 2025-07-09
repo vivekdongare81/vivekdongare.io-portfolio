@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { routes } from "@/data/global";
+import SocialLinks from "./SocialLinks";
 
 function Navbar({ currentPage }) {
   return (
@@ -27,20 +28,22 @@ function Navbar({ currentPage }) {
         </Link>
       </li>
       <ul className="flex items-center space-x-10">
-        {routes.map((item, index) => {
-          return (
-            <li
-              key={index}
-              className={`list-none text-white ${
-                currentPage === item.title
-                  ? "opacity-100"
-                  : "opacity-40 hover:opacity-100 transition-opacity"
-              }`}
-            >
-              <Link href={item.path}>{item.title}</Link>
-            </li>
-          );
-        })}
+        {routes.map((item, index) => (
+          <li
+            key={index}
+            className={`list-none text-white ${
+              currentPage === item.title
+                ? "opacity-100"
+                : "opacity-40 hover:opacity-100 transition-opacity"
+            }`}
+          >
+            <Link href={item.path}>{item.title}</Link>
+          </li>
+        ))}
+        {/* Social links after all routes (after Resume) */}
+        <li>
+          <SocialLinks />
+        </li>
       </ul>
     </nav>
   );

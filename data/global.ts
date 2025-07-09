@@ -34,6 +34,10 @@ export const routes: Route[] = [
     title: "Projects",
     path: "/projects",
   },
+  {
+    title: "Resume",
+    path: "/resume",
+  },
   // {
   //   title: "Designs",
   //   path: "/designs",
@@ -78,15 +82,15 @@ export const footer: Footer = {
           leavesWebsite: true,
         },
         {
-          name: "GitHub",
-          link: "https://github.com/vivekdongare81",
-          icon: "/static/icons/github.svg",
-          leavesWebsite: true,
-        },
-        {
           name: "LinkedIn",
           link: "https://www.linkedin.com/in/vivek-dongare-50823a18b/",
           icon: "/static/icons/linkedin.svg",
+          leavesWebsite: true,
+        },
+        {
+          name: "GitHub",
+          link: "https://github.com/vivekdongare81",
+          icon: "/static/icons/github.svg",
           leavesWebsite: true,
         },
         {
