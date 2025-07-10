@@ -42,7 +42,7 @@ function Experience() {
     {
       company: "ShopBonanza Pvt. Ltd.",
       companyUrl: "https://www.linkedin.com/company/shopbonanza/",
-      logo: "/static/logos/shopbonanza_logo.svg",
+      logo: "/static/logos/shopbonanza.svg",
       location: "Remote / Dehradun, Uttarakhand, India",
       roles: [
         {

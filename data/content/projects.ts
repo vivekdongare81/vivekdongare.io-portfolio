@@ -14,7 +14,7 @@ const projects: Project[] = [
   },
   {
     id: 1,
-    title: "React Emoji Search",
+    title: "StreamMyMeal-microservices",
     desc: "1800+ emojis at your fingertips. Ready-to-use with just a simple copy+paste.",
     img: "/static/projects/react-emoji-search.png",
     link: "https://react-emoji-search.braydentw.vercel.app/",
