@@ -2,24 +2,24 @@ import { kebabCase, kebabArray } from "@/utils/utils";
 import { Project } from "types";
 
 const projects: Project[] = [
+
   {
     id: 0,
-    title: "Fintech-event-driven-microservices",
-    desc: "The architecture is designed for scalability, resilience, and modularity, making it ideal for modern financial applications.",
-    img: "/static/projects/yei-learn.png",
-    link: "https://learn.theyei.org/",
-    github: "https://github.com/braydentw/learn.theyei",
-    tags: [ "Java" ,"docker" ,"kubernetes" ,"redis", "jenkins" ,"microservices" ,"spring-boot",  "postgresql", "ouath2"
-    ],
+    title: "StreamMyMeal-microservices",
+    desc: "Microservices-based food delivery platform that supports live streaming from restaurants while meals are being cooked, building transparency and trust. It enables users to place orders, track them, and receive real-time updates via Kafka and email notifications. ",
+    img: "/static/projects/streammymeal.png",
+    link: "https://github.com/vivekdongare81/StreamMyMeal-microservices",
+    github: "https://github.com/vivekdongare81/StreamMyMeal-microservices",
+    tags: [ "Java","spring-boot", "kafka","Feign","kubernetes" ,"redis","microservices" ,  "postgresql", "ouath2","React", "TypeScript","Next.js" ]
   },
   {
     id: 1,
-    title: "StreamMyMeal-microservices",
-    desc: "1800+ emojis at your fingertips. Ready-to-use with just a simple copy+paste.",
-    img: "/static/projects/react-emoji-search.png",
-    link: "https://react-emoji-search.braydentw.vercel.app/",
-    github: "https://github.com/braydentw/react-emoji-search",
-    tags: ["React", "CSS", "JSON"],
+    title: "FamilyBank-fintech-microservice",
+    desc: "Microservices architecture is designed for scalability, resilience, and modularity, making it ideal for modern financial applications.",
+    img: "/static/projects/familybank.png",
+    link: "https://github.com/vivekdongare81/FamilyBank-fintech-microservice",
+    github: "https://github.com/vivekdongare81/FamilyBank-fintech-microservice",
+    tags: [ "Java" ,"docker" ,"kubernetes" ,"redis", "jenkins" ,"microservices" ,"spring-boot",  "postgresql", "ouath2","React", "TypeScript","Next.js"],
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const projects: Project[] = [
     img: "/static/projects/pingpongchat1.png",
     link: "https://github.com/vivekdongare81/PingPongChat",
     github:"https://github.com/vivekdongare81/PingPongChat",
-    tags: ["HTML", "CSS", "Javascript", "Gumroad"],
+    tags:  [ "Java" ,"WebSocket","postgresql", "ouath2","React", "TypeScript","Next.js"],
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const projects: Project[] = [
     desc: "A Food Ordering website based on Java Servlets and JSPs with MySQL Integration using JDBC. 🍴",
     img: "/static/projects/food-o-holic.png",
     github: "https://github.com/vivekdongare81/Food-O-Holic",
-    tags: ["Node", "Javascript", "NPM", "HTML"],
+    tags: ["Servlets","JSPs","SQL", "Javascript", "HTML"],
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const projects: Project[] = [
     img: "/static/projects/eshoppers1.png",
     link:"https://drive.google.com/file/d/1ikOOHEryPhl0MW5Ev-zHQU8W7xw35Yu6/view?usp=sharing",
     github: "https://github.com/vivekdongare81/EShoppers-Delight",
-    tags: ["Rust", "CLI", "Game"],
+    tags: ["React", "SQL", "Node","Express.js"],
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ const projects: Project[] = [
     img: "/static/projects/note-it.png",
     link:"https://my-note-it-app.netlify.app/",
     github: "https://github.com/vivekdongare81/Note_it",
-    tags: ["Javascript", "NPM"],
+    tags: ["Javascript", "NPM", "HTML", "CSS"]
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ const projects: Project[] = [
     img: "/static/projects/my_journal.png",
     link: "https://ancient-thicket-84139.herokuapp.com/",
     github: "https://github.com/vivekdongare81/My_Journal",
-    tags: ["HTML", "CSS", "Javascript"],
+    tags: ["HTML", "TailwindCSS", "Javascript","MongoDB"],
   },
   {
     id: 8,
@@ -81,7 +81,7 @@ const projects: Project[] = [
     img: "/static/projects/dunk-n-dogs.png",
     link: "https://vivekdongare81.github.io/Dunk-N-Dogs",
     github: "https://github.com/vivekdongare81/Dunk-N-Dogs",
-    tags: ["HTML", "CSS", "Javascript"],
+    tags: ["HTML", "TailwindCSS", "Javascript"],
   },
   {
     id: 9,
@@ -99,7 +99,7 @@ const projects: Project[] = [
     img: "/static/projects/music-bash.png",
     link: "https://vivekdongare81.github.io/Music-Bash",
     github: "https://github.com/vivekdongare81/Music-Bash",
-    tags: ["HTML", "CSS", "Javascript"],
+    tags: ["HTML", "TailwindCSS", "Javascript"],
   },
 ];
 

@@ -30,9 +30,7 @@ function Heading({ tag }: HeadingProps) {
       )}
       {!tag && (
         <p className="text-fun-gray text-xl sm:text-2xl max-w-3xl m-auto">
-          I've built cool apps and websites using anything from HTML to React
-          (and even PHP!). Here are some of my favorite projects over the course
-          of my journey.
+          As a Java Backend Developer, I've built robust web applications combining modern frontend technologies React Next.js with powerful Java-based backends. Here are some of my favorite projects that showcase my full-stack development journey.
         </p>
       )}
     </div>
