@@ -1,15 +1,19 @@
 const isProd = process.env.NODE_ENV === 'production'
 const repositoryName = 'vivekdongare.io-portfolio'
 
-// Remove basePath and assetPrefix for now to test the export
+// For local development, we don't want the basePath
+const basePath = process.env.GITHUB_ACTIONS ? `/${repositoryName}` : ''
+const assetPrefix = process.env.GITHUB_ACTIONS ? `/${repositoryName}/` : ''
+
 module.exports = {
   output: 'export',
-  // Temporarily remove basePath and assetPrefix for debugging
-  // basePath: isProd ? `/${repositoryName}` : '',
-  // assetPrefix: isProd ? `/${repositoryName}/` : '',
+  basePath,
+  assetPrefix,
   images: {
     unoptimized: true,
   },
   trailingSlash: true,
-  // Remove the env variable for now
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath
+  }
 }
