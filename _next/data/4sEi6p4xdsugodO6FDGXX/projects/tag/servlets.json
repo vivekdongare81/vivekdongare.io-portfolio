@@ -1,0 +1,1 @@
+{"pageProps":{"filteredProjects":[{"id":4,"title":"Food-O-Holic","desc":"A Food Ordering website based on Java Servlets and JSPs with MySQL Integration using JDBC. 🍴","img":"/static/projects/food-o-holic.png","github":"https://github.com/vivekdongare81/Food-O-Holic","tags":["Servlets","JSPs","SQL","Javascript","HTML"]}],"tag":"servlets"},"__N_SSG":true}
