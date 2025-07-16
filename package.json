@@ -4,7 +4,7 @@
   "dev": "next dev",
   "build": "next build",
   "start": "next start",
-  "export": "next export -o out",
+  "export": "next build && next export -o out",
   "preview": "npx serve@latest out -l 3000 -s",
   "deploy": "rm -rf out && npm run export && touch out/.nojekyll && echo 'vivekdongare81.github.io' > out/CNAME && npx gh-pages -d out"
 },
