@@ -19,7 +19,7 @@ const projects: Project[] = [
     img: "/static/projects/familybank.png",
     link: "https://github.com/vivekdongare81/FamilyBank-fintech-microservice",
     github: "https://github.com/vivekdongare81/FamilyBank-fintech-microservice",
-    tags: [ "Java" ,"docker" ,"kubernetes" ,"redis", "jenkins" ,"microservices" ,"spring-boot",  "postgresql", "ouath2","React", "TypeScript","Next.js"],
+    tags: [ "Java" ,"docker" ,"kubernetes" ,"redis","microservices" ,"spring-boot",  "postgresql", "ouath2","React", "TypeScript","Next.js"],
   },
   {
     id: 2,
